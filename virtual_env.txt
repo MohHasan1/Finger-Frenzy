@@ -1,0 +1,29 @@
+For Mac: 
+
+1.To Create a Virtual Environment:
+    python3 -m venv venv
+
+2.To Activate the Virtual Environment:
+    source venv/bin/activate
+
+3.To Deactivate the Virtual Environment:
+    deactivate
+
+
+For Windows:
+
+1.To Create a Virtual Environment:
+    python -m venv venv
+2.To Activate the Virtual Environment:
+    venv\Scripts\activate
+3.To Deactivate the Virtual Environment:
+    deactivate
+
+
+1.To Save Installed Packages to requirements.txt:
+(After installing your packages (e.g., pip install package-name), you can save all current dependencies to a file:)
+    pip freeze > requirements.txt
+
+2.To Install Packages from requirements.txt:
+(If you have a requirements.txt file with a list of dependencies, you can install all the packages with:)
+    pip install -r requirements.txt
