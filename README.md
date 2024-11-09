@@ -26,7 +26,7 @@ pip install -r requirements.txt
 Once the virtual environment is activated and dependencies are installed, run the main.py script to start the game:
 
 ```bash
-python main.py
+python finger_frinzy.py
 ```
 
 ## Exit the Game Script:
