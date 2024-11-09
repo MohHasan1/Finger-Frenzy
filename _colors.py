@@ -1,3 +1,7 @@
+"""""
+This is a list of common colors in RGB format, where each color is represented by a tuple of three integers 
+corresponding to the red, green, and blue channels (0-255).
+"""""
 
 red = (255, 0, 0)
 green = (0, 255, 0)

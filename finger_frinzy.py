@@ -1,10 +1,21 @@
+"""""
+Game Demo:
+
+This script implements a simple hand detection game using OpenCV and MediaPipe. 
+The game involves two colored circles (red and green) on the screen. The player interacts with the game by moving 
+their hand, and specifically the index finger, to touch the circles. 
+Points are added or deducted based on whether the finger touches the green or red circle, respectively.
+The game lasts for 20 seconds, and the score is displayed on the screen. The game ends when the timer reaches zero.
+
+Press 'q' to exit the game.
+"""""
+
 import cv2 as cv
-import numpy as np
 import mediapipe as mp
 import time
 import random
-import colors as c
 import math
+import _colors as c
 
 # Hand object
 mpHands = mp.solutions.hands
@@ -58,8 +69,8 @@ while wc.isOpened():
     # draw red and green circles
     red_radius = 40
     green_radius = 45
-    cv.circle(img=frame, center=(red_x, red_y), radius=red_radius, color=c.red, thickness=10)
-    cv.circle(img=frame, center=(green_x, green_y), radius=green_radius, color=c.green, thickness=10)
+    cv.circle(img=frame, center=(red_x, red_y), radius=40, color=c.red, thickness=10)
+    cv.circle(img=frame, center=(green_x, green_y), radius=45, color=c.green, thickness=10)
     cv.putText(img=frame, text="score: "+str(score), org=(100, 120), fontFace=cv.FONT_HERSHEY_SIMPLEX, fontScale=3, color=c.blue, thickness=3)
 
     # Calculate the remaining time
